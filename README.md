@@ -1,7 +1,11 @@
 # Flask SQL Injection Demo
 This is a small demonstration of how a SQL injection might look like, written for a presentation in front of a highschool class.
 
-The server hosts an index page with a login to demonstrate a SQL injection, e.g. "admin'; --" (without the exclamation marks) in the user input, to successfully log in with any password. The correct password for the admin account is admin123.
+The server hosts an index page with a login to demonstrate a SQL injection, e.g. 
+```sql
+admin'; --
+```
+in the user input, to successfully log in with any password. The correct password for the admin account is admin123.
 
 After sucessfully logging in, there is a button that redirects to the posts page, which can also be reached by link. 
 
